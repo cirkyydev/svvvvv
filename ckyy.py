@@ -5,11 +5,11 @@ import traceback
 import colorama
 import discord
 import requests
-from colorama import Fore
+from colorama import Fore, Style
 from discord.ext import commands
 
 colorama.init()
-os.system('cls')
+os.system('clear')
 
 try:
     with open("version.txt") as data:
@@ -71,7 +71,7 @@ def checkActivity(type, text):
         return None
 
 
- print(f"""{Style.BRIGHT}{Fore.RED}
+print (f"""{Style.BRIGHT}{Fore.RED}
 ░█████╗░████████╗██████╗░░█████╗░██████╗░███████╗░██████╗
 ██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔════╝
 ██║░░╚═╝░░░██║░░░██████╔╝███████║██║░░██║█████╗░░╚█████╗░
@@ -79,6 +79,7 @@ def checkActivity(type, text):
 ╚█████╔╝░░░██║░░░██║░░██║██║░░██║██████╔╝███████╗██████╔╝
 ░╚════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░╚══════╝╚═════╝░ℭ𝔦𝔯𝔨𝔶𝔶 v1
 {Style.RESET_ALL}{Fore.WHITE}{Fore.RESET}"""
+       
       f"{colors['white']}                           Author: {colors['main']}CKY#4449\n"
       f"{colors['white']}                           Version: {colors['main']}{version} {checkVersion()}\n"
       f"{colors['white']}                           Discord: {colors['main']}........\n\n{colors['white']}")
